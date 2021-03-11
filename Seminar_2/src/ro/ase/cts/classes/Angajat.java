@@ -30,7 +30,6 @@ public class Angajat extends Aplicant{
 		
 	}
 	
-	
 	@Override
 	public String toString() {
 		return "Angajat:" +super.toString()
