@@ -21,8 +21,10 @@ public class Program {
 		try {
 			//linie modificari
 			listaAplicanti = citesteAplicanti(new AngajatReader("angajati.txt"));
+			Proiect proiect=new Proiect(80);
 			for(Aplicant angajat:listaAplicanti) {
 				System.out.println(angajat.toString());
+				angajat.afiseazaStatus(proiect);
 				System.out.println(angajat.getSumaFinantata());
 			}
 		} catch (FileNotFoundException e) {

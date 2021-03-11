@@ -1,12 +1,14 @@
 package ro.ase.cts.classes;
 
+import java.util.Arrays;
+
 public abstract class Aplicant {
 	protected String nume;
 	protected String prenume;
 	protected int varsta;
 	protected int punctaj;
-	protected int nr_proiecte;
-	protected String[] denumireProiect;
+	protected int nrProiecte;
+	protected String[] denumiriProiecte;
 
 	public String getNume() {
 		return nume;
@@ -32,11 +34,14 @@ public abstract class Aplicant {
 		this.varsta = varsta;
 	}
 
-	public void statut() {
-		if (punctaj > 80)
-			System.out.println("Aplicantul " + nume + " " + prenume + " a fost acceptat.");
-		else
-			System.out.println("Aplicantul " + nume + " " + prenume + " nu a fost acceptat.");
+	public void afiseazaStatus(Proiect proiect) {
+		System.out.println("Aplicantul "+nume+" "+prenume);
+		if (punctaj >proiect.getPragAcceptare()) {
+			System.out.println(" a fost acceptat.");
+		}
+		else {
+			System.out.println(" nu a fost acceptat.");
+		}
 	}
 
 	public int getPunctaj() {
@@ -58,20 +63,41 @@ public abstract class Aplicant {
 		this.prenume = prenume;
 		this.varsta = varsta;
 		this.punctaj = punctaj;
-		this.nr_proiecte = nr_proiecte;
-		this.denumireProiect = denumireProiect;
+		this.nrProiecte = nr_proiecte;
+		this.denumiriProiecte = denumireProiect;
 	}
 
-	public int getNr_proiecte() {
-		return nr_proiecte;
+	public int getNrProiecte() {
+		return nrProiecte;
 	}
 
-	public void setNr_proiecte(int nr_proiecte, String[] vect) {
-		this.nr_proiecte = nr_proiecte;
-		this.denumireProiect = vect;
+	public void setNrProiecte(int nr_proiecte, String[] vect) {
+		this.nrProiecte = nr_proiecte;
+		this.denumiriProiecte = vect;
 
 	}
 	
 	public abstract float getSumaFinantata();
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Aplicant [nume=");
+		builder.append(nume);
+		builder.append(", prenume=");
+		builder.append(prenume);
+		builder.append(", varsta=");
+		builder.append(varsta);
+		builder.append(", punctaj=");
+		builder.append(punctaj);
+		builder.append(", nrProiecte=");
+		builder.append(nrProiecte);
+		builder.append(", denumiriProiecte=");
+		builder.append(Arrays.toString(denumiriProiecte));
+		builder.append("]");
+		return builder.toString();
+	}
+	
+	
 
 }
