@@ -1,7 +1,7 @@
 package ro.ase.cts.main;
 
-import ro.ase.cts.eager.ClinicaVeterinara;
-import ro.ase.cts.eager.ClinicaVeterinaraLazy;
+import ro.ase.cts.classes.ClinicaVeterinara;
+import ro.ase.cts.classes.ClinicaVeterinaraLazy;
 
 public class Program {
 
