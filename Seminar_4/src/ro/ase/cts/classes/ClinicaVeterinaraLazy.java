@@ -17,11 +17,31 @@ public class ClinicaVeterinaraLazy {
 		this.buget = buget;
 	}
 	
-	public static ClinicaVeterinaraLazy getInstance(String nume, String adresa, int nrMedici, float buget) {
+	public static synchronized ClinicaVeterinaraLazy getInstance(String nume, String adresa, int nrMedici, float buget) {
 		if(instanta == null) {
 			instanta = new ClinicaVeterinaraLazy(nume, adresa, nrMedici, buget);
 		}
 		return instanta;
+	}
+
+	public void setNume(String nume) {
+		this.nume = nume;
+	}
+
+	public void setAdresa(String adresa) {
+		this.adresa = adresa;
+	}
+
+	public void setNrMedici(int nrMedici) {
+		this.nrMedici = nrMedici;
+	}
+
+	public void setBuget(float buget) {
+		this.buget = buget;
+	}
+
+	public static void setInstanta(ClinicaVeterinaraLazy instanta) {
+		ClinicaVeterinaraLazy.instanta = instanta;
 	}
 
 	@Override
