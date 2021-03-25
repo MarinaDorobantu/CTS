@@ -1,4 +1,4 @@
-package ro.ase.cts.classes;
+package ro.ase.cts.simpleFactory;
 
 public class CategorieFactory {
 	public Categorie creareCategorie(CategoriiMedicamente categoriiMedicamente, float pretDeBaza) throws Exception {

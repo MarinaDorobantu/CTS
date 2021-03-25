@@ -1,4 +1,4 @@
-package ro.ase.cts.classes;
+package ro.ase.cts.simpleFactory;
 
 public class Body extends Categorie {
 	public Body(float pretDeBaza) {

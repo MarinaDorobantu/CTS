@@ -1,4 +1,4 @@
-package ro.ase.cts.classes;
+package ro.ase.cts.simpleFactory;
 
 public abstract class Categorie {
 	float pretDeBaza;
