@@ -4,6 +4,10 @@ import ro.ase.cts.adapter.AdapterCreditClasa;
 import ro.ase.cts.adapter.AdapterCreditObiecte;
 import ro.ase.cts.adapter.InterfataCredit;
 import ro.ase.cts.adapter.Leasing;
+import ro.ase.cts.decorator.DecoratorContactLess;
+import ro.ase.cts.decorator.Card;
+import ro.ase.cts.decorator.ConcretDecorator;
+import ro.ase.cts.decorator.ICard;
 
 public class Main {
 
@@ -20,6 +24,15 @@ public class Main {
 		
 		AdapterCreditClasa adapterClasa = new AdapterCreditClasa();
 		oferaInformatiiCredit(adapterClasa, "Gigel", 324.50f);
+		
+		
+		//
+		ICard card1= new Card("Marina");
+		card1.platesteFizic();
+		card1.platesteOnline();
+		
+		DecoratorContactLess decorator = new ConcretDecorator(card1);
+		decorator.platesteContactLess();
 		
 	}
 
