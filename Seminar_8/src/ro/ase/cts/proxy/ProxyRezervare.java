@@ -1,4 +1,4 @@
-package ro.ase.cts.classes.proxy;
+package ro.ase.cts.proxy;
 
 public class ProxyRezervare implements IRezervare{
 	

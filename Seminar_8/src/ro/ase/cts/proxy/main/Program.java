@@ -1,8 +1,8 @@
-package ro.ase.cts.classes.proxy.main;
+package ro.ase.cts.proxy.main;
 
-import ro.ase.cts.classes.proxy.IRezervare;
-import ro.ase.cts.classes.proxy.ProxyRezervare;
-import ro.ase.cts.classes.proxy.Rezervare;
+import ro.ase.cts.proxy.IRezervare;
+import ro.ase.cts.proxy.ProxyRezervare;
+import ro.ase.cts.proxy.Rezervare;
 
 public class Program {
 
