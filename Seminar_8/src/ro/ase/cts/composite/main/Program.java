@@ -1,8 +1,8 @@
-package ro.ase.cts.classes.composite.main;
+package ro.ase.cts.composite.main;
 
-import ro.ase.cts.classes.composite.Item;
-import ro.ase.cts.classes.composite.OptiuniMeniu;
-import ro.ase.cts.classes.composite.Sectiune;
+import ro.ase.cts.composite.Item;
+import ro.ase.cts.composite.OptiuniMeniu;
+import ro.ase.cts.composite.Sectiune;
 
 public class Program {
 

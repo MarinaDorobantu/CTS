@@ -1,4 +1,4 @@
-package ro.ase.cts.classes.composite;
+package ro.ase.cts.composite;
 
 public class Item implements OptiuniMeniu{
 

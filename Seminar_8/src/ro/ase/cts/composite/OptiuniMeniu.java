@@ -1,4 +1,4 @@
-package ro.ase.cts.classes.composite;
+package ro.ase.cts.composite;
 
 public interface OptiuniMeniu {
 	void adaugaNod(OptiuniMeniu optiune) throws Exception;
