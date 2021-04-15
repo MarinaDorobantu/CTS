@@ -1,4 +1,4 @@
-package ro.ase.cts.classes.flyweight;
+package ro.ase.cts.flyweight;
 
 import java.util.HashMap;
 import java.util.Map;

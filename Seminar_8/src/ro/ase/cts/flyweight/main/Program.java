@@ -1,7 +1,7 @@
-package ro.ase.cts.classes.flyweight.main;
+package ro.ase.cts.flyweight.main;
 
-import ro.ase.cts.classes.flyweight.FabricaRezervari;
-import ro.ase.cts.classes.flyweight.Rezervare;
+import ro.ase.cts.flyweight.FabricaRezervari;
+import ro.ase.cts.flyweight.Rezervare;
 
 public class Program {
 

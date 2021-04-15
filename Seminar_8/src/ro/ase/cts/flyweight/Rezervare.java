@@ -1,4 +1,4 @@
-package ro.ase.cts.classes.flyweight;
+package ro.ase.cts.flyweight;
 
 public class Rezervare {
 	private int nrMasa;
